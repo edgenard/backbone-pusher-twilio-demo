@@ -1,0 +1,16 @@
+<% posts.each(function(post){ %>
+
+  <hr>
+
+  <article>
+
+    <%= post.escape("body") %>
+
+    <footer>
+      <strong><%= post.escape("author") %></strong> &mdash;
+      <time><%= post.escape("created_at") %></time>
+    </footer>
+
+  </article>
+
+<% }) %>

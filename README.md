@@ -2,9 +2,10 @@
 
 Sending live cat sightings via text to a real time app.
 
-1. [Figaro](https://github.com/laserlemon/figaro#give-me-an-example)
-3. [Pusher](http://pusher.com/) [Gem](https://github.com/pusher/pusher-gem)
-3. [Twilio](https://www.twilio.com/) [Gem](https://github.com/twilio/twilio-ruby) [Inbound SMS Docs](https://www.twilio.com/docs/api/twiml/sms/twilio_request#synchronous)
+1. [Pusher](http://pusher.com/) / [Gem](https://github.com/pusher/pusher-gem)
+2. [Twilio](https://www.twilio.com/) / [Gem](https://github.com/twilio/twilio-ruby) / [Inbound SMS Docs](https://www.twilio.com/docs/api/twiml/sms/twilio_request#synchronous)
+3. [Figaro](https://github.com/laserlemon/figaro#give-me-an-example)
+
 
 Files to check out:
 - [pusher.rb](./config/initializers/pusher.rb)

@@ -5,6 +5,17 @@
   <%= stylesheet_link_tag 'application' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+
+  <script src="//js.pusher.com/2.2/pusher.min.js"></script>
+  <script>
+
+    Pusher.log = function(message) {
+      console.log(message);
+    };
+
+    window.pusher = new Pusher('<%= ENV["PUSHER_KEY"] %>');
+
+  </script>
 </head>
 <body>
 

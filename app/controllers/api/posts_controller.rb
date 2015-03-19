@@ -12,6 +12,9 @@ class Api::PostsController < ApplicationController
 
   def create
     post = Post.create!(post_params)
+
+    Pusher.trigger('posts', 'new_post', post.to_json)
+
     render json: post
   end
 

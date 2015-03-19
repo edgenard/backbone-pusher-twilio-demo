@@ -14,5 +14,12 @@ window.BackbonePusherTwilioDemo = {
     $rootEl.append(formView.render().$el);
     $rootEl.append(indexView.render().$el);
 
+    var channel = window.pusher.subscribe('posts');
+
+    channel.bind('new_post', function(data) {
+      var post = new BackbonePusherTwilioDemo.Models.Post(data);
+      posts.add(post);
+    });
+
   }
 };

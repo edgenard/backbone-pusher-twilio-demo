@@ -14,6 +14,7 @@ gem 'figaro'
 gem 'backbone-on-rails'
 
 gem 'pusher'
+gem 'twilio-ruby'
 
 group :production do
   gem 'rails_12factor'
